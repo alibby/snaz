@@ -1,5 +1,27 @@
+== Introduciton
+
+This is a small app to demonstrate some of the features of Sunspot. It was 
+created to use as a demonstration app for a talk on Solr and Rails.
+
+The application has a Document model and DocumentsController.  The Documents 
+are RFCs.  An archive of all of the RFCs and an XML index of them is downloadable
+from xforty.com.  
+
+Attempts have been made to get the app running easily.  
 
 == Setups
+
+o Install gems "sudo rake gems:install"
+
+o Init db "rake db:migrate"
+
+o Download the RFCs and the RFC index by running "rake snaz:download_data"
+
+o Start solr "rake sunspot:solr:run"
+
+o Load the data into the DB and Solr "rake snaz:load_documents"
+
+The first and third step both take quite a while.  
 
 === Persnickety Sunspot.  
 
