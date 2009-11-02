@@ -1,0 +1,12 @@
+<h1><%= @results.total %> Search Results for "<%= @query %>"</h1>
+
+<ul class='navigation'>
+	<li><%= link_to 'Home', '/' %></li>
+	<li><%= render :partial => 'search_form' %></li>
+</ul>
+
+<% @results.results.each do |result| %>
+ <%= render :partial => 'list_item', :locals => { :doc => result } %>
+<% end %>
+
+<%= will_paginate @results.results %>

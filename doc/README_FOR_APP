@@ -1,0 +1,21 @@
+
+== Setups
+
+=== Persnickety Sunspot.  
+
+Sunspot needs the following to install/ run:
+
+o rsolr - sudo gem install rsolr --source=http://gemcutter.org
+o optiflag version 0.6.5 exactly - sudo gem instlal optiflag -v 0.6.5
+o haml 2.2.10 - sudo gem install haml
+
+With those on board, the Sunspot gems would finally install
+
+sudo gem install outoftime-sunspot --source=http://gems.github.com
+sudo gem install outoftime-sunspot-rails --source=http://gems.github.com
+
+Retrieved XML RFC index and RFCs from http://www.rfc-editor.org/rfc.html
+
+The whole archive was downloaded from ftp://ftp.rfc-editor.org/in-notes/tar/RFC-all.tar.gz
+
+

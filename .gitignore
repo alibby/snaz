@@ -1,0 +1,10 @@
+log/*
+tmp/cache
+tmp/pids
+tmp/sessions
+tmp/sockets
+data
+solr
+db/*.sqlite3
+db/*.sqlite3-*
+.DS_Store

@@ -1,0 +1,9 @@
+<h1>RFC Listing</h1>
+
+<%= render :partial => 'search_form' %>
+<div class='listing'>
+<% @documents.each do |doc| %>
+ <%= render :partial => 'list_item', :locals => { :doc => doc } %>
+<% end %>
+</div>
+<%= will_paginate @documents %>
